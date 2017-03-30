@@ -1,0 +1,129 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+    <style>
+        .bar {
+            position: fixed;
+            margin-top: -20%;
+            width: 100%;
+            height: 11%;
+            font-size: 40px;
+            font-weight: bold;
+            z-index: 999;
+        }
+        
+        .backDiv {
+            position: fixed;
+            margin-top: -18%;
+            z-index: 999;
+        }
+        
+        .backButton {
+            height: 45px;
+            width: 45px;
+            z-index: 999;
+        }
+        
+        .spacer {
+            padding-top: 10px;
+            text-align: center;
+            width: 100%;
+            height: 100px;
+        }
+        /*.showPage {
+            margin: 20% 5% 5% 5%;
+            border: 3px solid #4db6ac;
+        }*/
+        
+        .title {
+            font-family: 'Francois One', sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            text-shadow: -1px 0 #00796B, 0 1px #00796B, 1px 0 #00796B, 0 -1px #00796B;
+        }
+        
+        .subtitle {
+            position: relative;
+            word-wrap: break-word;
+            color: #4db6ac;
+            margin-top: -35px;
+            font-size: 25px;
+            font-family: 'Lobster', cursive;
+        }
+        
+        .seperator {
+            margin-left: 5%;
+            margin-right: 5%;
+            width: 90%;
+            border-bottom: 1px solid #00796B;
+        }
+        
+        #map {
+            width: 100%;
+            height: 200px;
+        }
+        #review{
+            width: 100%;
+        }
+        #track{
+            width: 100%;
+        }
+    </style>
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection"></link>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<body class="#fafafa grey lighten-5" id="visible">
+    <div class="bar #4db6ac teal lighten-2 center-align #fafafa-text grey-text text-lighten-5 z-depth-2">
+        SHOP
+    </div>
+    <div class="backDiv">
+        <a href="https://www.google.com"><img class="backButton" src="back.png"></a>
+    </div>
+    <div class="showPage #fafafa grey lighten-5 center-align z-depth-3">
+        <!--MAP-->
+        <div class="container">
+            <div class="z-depth-3" id="map">
+            </div>
+        </div>
+        <div class="outerBox">
+            <p class="title #4db6ac-text teal-text text-lighten-2">SHOP NAME</p>
+            <p class="subtitle" id="shopName">TEST</p>
+        </div>
+        <div class="seperator"></div>
+        <p class="title #4db6ac-text teal-text text-lighten-2">ADDRESS</p>
+        <p class="subtitle" id="address"></p>
+        <div class="seperator"></div>
+        <p class="title #4db6ac-text teal-text text-lighten-2">CONTACT NO</p>
+        <p class="subtitle" id="contactno"></p>
+        <div class="seperator"></div>
+        <p class="title #4db6ac-text teal-text text-lighten-2">SERVICE TYPE</p>
+        <p class="subtitle" id="servicetype"></p>
+        <div class="seperator"></div>
+        <p class="title #4db6ac-text teal-text text-lighten-2">VEHICLE TYPE</p>
+        <p class="subtitle" id="vehicletype">111111111111111111111111111111111111111111111</p>
+        <div class="seperator"></div>
+        <p class="title #4db6ac-text teal-text text-lighten-2">TOWING CONTACT</p>
+        <p class="subtitle" id="towingcontact">111111111111111111111111111111111111111111111</p>
+        <div class="seperator"></div>
+        <p class="title #4db6ac-text teal-text text-lighten-2">TIMING</p>
+        <p class="subtitle" id="timing">111111111111111111111111111111111111111111111</p>
+        <div class="row">
+            <div class="col s12">
+                <a id="review" class="waves-effect waves-light btn">Submit a review</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <a id="track" class="waves-effect waves-light btn">Track mechanic</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="routeMap.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJtxqSbTlSsenPaeeQVE2s3oOiW4QW1B0&callback=initMap"></script>
+</body>
+
+</html>
