@@ -1,0 +1,14 @@
+    
+        #map {
+            width: 100%;
+            height: 70%;
+        }
+        #currentLoc{
+            margin-left: 90%;
+
+        }
+        .container{
+            padding:5%;
+            height:500px;
+            width:100%;
+        }
